@@ -5,7 +5,7 @@ import { Wrapper } from "~/lib/wrapper";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "Remix | @UiReact" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
