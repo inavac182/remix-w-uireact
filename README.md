@@ -13,9 +13,18 @@ You can use your appearance settings to change the theme or implement your own t
 
 ## Styling
 
-In this example we are using a mix of styled-components and CSS modules with SASS for styling just for demoing purposes. We highly suggest you only use one in your app's code as that will bring consistency and make it easier to maintain.
+Important file to mention is `global.css` this file imports the styles from the @UiReact dependencies. You will need to add each CSS file here as needed when installing a new package.
 
-As @UiReact uses styled-components you will have to keep it installed, although if is not your favorite you can only use CSS Modules in your apps code and leave styled-components for the library components.
+If you create and want to use your own theme style variables, make sure you delete: 
+
+```
+/* DELETE THIS IMPORT IF YOU WILL PROVIDE YOUR OWN THEME VARIABLES */
+@import url(../node_modules/@uireact/foundation/dist/index.css);
+
+```
+
+Also, the font family variable is declared in this file as in this Remix example the font is linked through the default export 
+of links in `app/routes/_index.tsx`. The CSS variable is then used throughout the components to use the correct font name.
 
 ## Getting Started
 

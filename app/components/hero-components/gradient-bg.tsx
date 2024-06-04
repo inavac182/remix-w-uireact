@@ -1,7 +1,5 @@
 import styles from './gradient.module.scss';
 
-export const GradientBg = () => {
-    return (
-        <div className={styles.gradient} />
-    );
-};
+export const GradientBg = () => (
+    <div className={styles.gradient} />
+);
