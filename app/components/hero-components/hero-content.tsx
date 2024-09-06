@@ -3,7 +3,7 @@ import { UiFlexGrid, UiFlexGridItem } from '@uireact/flex';
 import { UiSpacing } from '@uireact/foundation';
 import { UiReactViewRotating, UiReactTapScaleDown, UiReactHoverElevate } from '@uireact/framer-animations';
 import { UiIcon } from '@uireact/icons';
-import { UiText, UiHeading, UiButtonLink } from '@uireact/text';
+import { UiText, UiButtonLink } from '@uireact/text';
 
 import styles from './hero.module.scss';
 
@@ -29,7 +29,7 @@ export const HeroContent = () => {
                     <a href="https://remix.run" target='_blank' rel="noreferrer">
                         <UiCard motion={{ ...UiReactTapScaleDown, ...UiReactHoverElevate }}>
                             <UiFlexGrid justifyContent='space-between' alignItems='center'>
-                                <UiHeading>Remix</UiHeading>
+                                <UiText>Remix</UiText>
                                 <UiIcon icon="AngleCircleRight" />
                             </UiFlexGrid>
                         </UiCard>
@@ -37,7 +37,7 @@ export const HeroContent = () => {
                     <a href="https://uireact.io" target='_blank' rel="noreferrer">
                         <UiCard motion={{ ...UiReactTapScaleDown, ...UiReactHoverElevate }}>
                             <UiFlexGrid justifyContent='space-between' alignItems='center'>
-                                <UiHeading>@UiReact</UiHeading>
+                                <UiText>@UiReact</UiText>
                                 <UiIcon icon="AngleCircleRight" />
                             </UiFlexGrid>
                         </UiCard>
@@ -45,7 +45,7 @@ export const HeroContent = () => {
                     <a href="https://vercel.com/guides/deploying-remix-with-vercel" target='_blank' rel="noreferrer">
                         <UiCard motion={{ ...UiReactTapScaleDown, ...UiReactHoverElevate }}>
                             <UiFlexGrid justifyContent='space-between' alignItems='center'>
-                                <UiHeading>Deploy to Vercel </UiHeading>
+                                <UiText>Deploy to Vercel </UiText>
                                 <UiIcon icon="AngleCircleRight" />
                             </UiFlexGrid>
                         </UiCard>
@@ -53,17 +53,17 @@ export const HeroContent = () => {
                 </UiFlexGrid>
                 <UiFlexGrid gap='five' direction='column'>
                     <UiText fontStyle='bold'>@UiReact useful links:</UiText>
-                    <UiButtonLink padding={{block: 'four'}}>
+                    <UiButtonLink padding={{block: 'two'}}>
                         <a href="https://uireact.io/create-theme" target='_blank' rel="noreferrer">
-                            <UiFlexGrid gap='four'>
+                            <UiFlexGrid gap='two' alignItems='center'>
                                 <UiIcon icon='Layers' />
                                 Create your theme
                             </UiFlexGrid>
                         </a>
                     </UiButtonLink>
-                    <UiButtonLink padding={{block: 'four'}}>
+                    <UiButtonLink padding={{block: 'two'}}>
                         <a href="https://github.com/inavac182/uireact/discussions" target='_blank' rel="noreferrer">
-                            <UiFlexGrid gap='four'>
+                            <UiFlexGrid gap='two' alignItems='center'>
                                 <UiIcon icon='Question' />
                                 Questions
                             </UiFlexGrid>
